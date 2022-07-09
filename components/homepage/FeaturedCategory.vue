@@ -2,7 +2,9 @@
   <div>
     <b-row class="mt-3 mb-2">
       <b-col>
-        <h3 class="text-center font-weigth-bold" style="23px;">Featured Category</h3>
+        <h3 class="text-center font-weigth-bold" style="23px;">
+          Featured Category
+        </h3>
         <p class="text-center" style="12px;">
           Check & Get Your Desired Product from Featured Category!
         </p>
@@ -12,17 +14,27 @@
       <b-col>
         <b-container>
           <b-row>
-            <b-col v-for="(category, i) in featured_categories_top" :key="i" class="border ml-1 mr-1" >
-              <b-row class="mt-4">
-                <b-col style="width: 70px; height: 45px">
-                  <img
-                    :src="require(`~/assets/images/landingpage/icons/${category.src}.png`)"
-                    alt="cpu-cooler"
-                    class="img-fluid"
-                  />
-                </b-col>
-              </b-row>
-              <p class="text-center mt-4" style="font-size:12px">{{ category.name }}</p>
+            <b-col
+              v-for="(category, i) in featured_categories_top"
+              :key="i"
+              class="border ml-1 mr-1"
+            >
+              <b-link :href="`/${category.src}`">
+                <b-row class="mt-4">
+                  <b-col style="width: 70px; height: 45px">
+                    <img
+                      :src="
+                        require(`~/assets/images/landingpage/icons/${category.src}.png`)
+                      "
+                      alt="cpu-cooler"
+                      class="img-fluid"
+                    />
+                  </b-col>
+                </b-row>
+                <p class="text-center mt-4" style="font-size: 12px">
+                  {{ category.name }}
+                </p>
+              </b-link>
             </b-col>
           </b-row>
         </b-container>
@@ -32,17 +44,25 @@
       <b-col>
         <b-container>
           <b-row>
-            <b-col v-for="(category, i) in featured_categories_down" :key="i" class="border ml-1 mr-1" >
+            <b-col
+              v-for="(category, i) in featured_categories_down"
+              :key="i"
+              class="border ml-1 mr-1"
+            >
               <b-row class="mt-4">
                 <b-col style="width: 70px; height: 45px">
                   <img
-                    :src="require(`~/assets/images/landingpage/icons/${category.src}.png`)"
+                    :src="
+                      require(`~/assets/images/landingpage/icons/${category.src}.png`)
+                    "
                     alt="cpu-cooler"
                     class="img-fluid"
                   />
                 </b-col>
               </b-row>
-              <p class="text-center mt-4" style="font-size:12px">{{ category.name }}</p>
+              <p class="text-center mt-4" style="font-size: 12px">
+                {{ category.name }}
+              </p>
             </b-col>
           </b-row>
         </b-container>

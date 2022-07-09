@@ -84,10 +84,9 @@
           </b-col>
         </b-row>
       </b-col>
-      
     </b-row>
     <b-row>
-      <b-col> </b-col>
+      <b-col></b-col>
       <b-col></b-col>
       <b-col></b-col>
     </b-row>

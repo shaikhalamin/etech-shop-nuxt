@@ -6,6 +6,7 @@
     <FeaturedItems />
     <GamingPc />
     <TopDeals />
+    <Footer />
   </div>
 </template>
 
@@ -16,7 +17,8 @@ import LandingHeader from "~/components/header/LandingHeader.vue";
 import FeaturedCategory from "~/components/homepage/FeaturedCategory.vue";
 import FeaturedItems from "~/components/homepage/FeaturedItems.vue";
 import GamingPc from "~/components/homepage/GamingPc.vue";
-import TopDeals from "~/components/homepage/TopDeals.vue"
+import TopDeals from "~/components/homepage/TopDeals.vue";
+import Footer from "~/components/footer/Footer.vue";
 
 export default Vue.extend({
   components: {
@@ -25,7 +27,8 @@ export default Vue.extend({
     FeaturedCategory,
     FeaturedItems,
     GamingPc,
-    TopDeals
+    TopDeals,
+    Footer,
   },
   name: "Index",
 });
